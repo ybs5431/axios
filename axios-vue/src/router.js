@@ -23,11 +23,16 @@ export default new Router({
       name: 'get',
       component: () => import(/* webpackChunkName: "about" */ './views/get.vue')
     },
-    
     {
       path: '/concurrent',
       name: 'concurrent',
       component: () => import(/* webpackChunkName: "about" */ './views/concurrent.vue')
+    },
+    
+    {
+      path: '/instance',
+      name: 'instance',
+      component: () => import(/* webpackChunkName: "about" */ './views/instance.vue')
     }
   ]
 })
